@@ -7,6 +7,11 @@
 
 </p>
 
+<h1>
+  What's This About? 🤷
+</h1>
+<p>Simple! This is a no-nonsense, easy-to-use Todo-App that saves your tasks in your browser's local storage. Why? So you can close your tab, have a nap, come back, and find everything right where you left it.</p>
+
 
 
 
