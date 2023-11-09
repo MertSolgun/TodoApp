@@ -1,0 +1,316 @@
+body {
+  background-color: #050831;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.todoText {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: auto;
+}
+
+.todoText::-webkit-scrollbar {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px auto;
+}
+
+main div img {
+  width: 300px;
+  transform: rotate(10deg);
+}
+
+.getDate {
+  font-size: 3rem;
+  color: white;
+}
+
+.todoList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
+}
+
+.fa-trash-can {
+  position: absolute;
+  right: 10px;
+  color: rgb(205, 16, 16);
+}
+
+.todoList li {
+  position: relative;
+  padding: 9px;
+  margin: 10px auto;
+  gap: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 600px;
+  display: flex;
+  white-space: nowrap;
+  font-size: 2rem;
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.todoList li {
+  list-style: none;
+}
+
+.addItemInput input {
+  width: 500px;
+  border: 10px;
+  font-size: 1.2rem;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid white;
+  outline: none;
+}
+
+.addItemInput input::placeholder {
+  color: black;
+  padding: 5px;
+}
+
+.addItemInput {
+  position: relative;
+}
+
+.fa-plus {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  cursor: pointer;
+  font-size: 1.9rem;
+  top: 25px;
+}
+
+.checkbox-wrapper-39 *,
+.checkbox-wrapper-39 *::before,
+.checkbox-wrapper-39 *::after {
+  box-sizing: border-box;
+}
+
+.checkbox-wrapper-39 label {
+  display: block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+}
+
+.checkbox-wrapper-39 input {
+  visibility: hidden;
+  display: none;
+}
+
+.checkbox-wrapper-39 input:checked ~ .checkbox {
+  transform: rotate(45deg);
+  width: 14px;
+  margin-left: 12px;
+  border-color: #24c78e;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  border-radius: 0;
+}
+
+.checkbox-wrapper-39 .checkbox {
+  display: block;
+  width: inherit;
+  height: inherit;
+  border: 3px solid #434343;
+  border-radius: 6px;
+  transition: all 0.375s;
+}
+
+@media (max-width: 600px) {
+  .addItemInput input {
+    width: 70%;
+    border: 10px;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  .fa-plus {
+    position: absolute;
+    right: 65px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    top: 30px;
+  }
+  .todoList li {
+    position: relative;
+    padding: 9px;
+    margin: 10px auto;
+    gap: 10px;
+    border-radius: 5px;
+    width: 90%;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    white-space: nowrap;
+    border: none;
+    font-size: 1.5rem;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  .todoText {
+    padding-top: 10px;
+  }
+  .fa-trash-can {
+    padding-top: 10px;
+  }
+
+  main div img {
+    width: 200px;
+  }
+  .addItemInput {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .getDate {
+    font-size: 1.5rem;
+  }
+  main div img {
+    width: 100px;
+  }
+
+  .addItemInput input {
+    width: 70%;
+    border: 10px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    margin: 10px auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+  .todoList li {
+    position: relative;
+    padding: 5px;
+    margin: 10px auto;
+    gap: 10px;
+
+    border-radius: 5px;
+    width: 90%;
+    display: flex;
+    white-space: nowrap;
+    border: none;
+    font-size: 1.5rem;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+  }
+  .fa-plus {
+    position: absolute;
+    right: 50px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    top: 25px;
+  }
+}
+
+/* Animation bg */
+
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(
+    315deg,
+    rgba(101, 0, 94, 1) 3%,
+    rgba(60, 132, 206, 1) 38%,
+    rgba(48, 238, 226, 1) 68%,
+    rgba(255, 25, 25, 1) 98%
+  );
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+    transform: translateX(1);
+  }
+
+  25% {
+    transform: translateX(-25%);
+  }
+
+  50% {
+    transform: translateX(-50%);
+  }
+
+  75% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(1);
+  }
+}

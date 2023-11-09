@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./style.css" />
+    <!-- SweetAlert Cdn -->
+    <link
+      rel="icon"
+      href="./img/sketch-3-todo-list-app-icon-template-removebg-preview.png"
+      type="image/gif"
+      sizes="16x16"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+      <div class="wave"></div>
+    </div>
+    <main>
+      <div>
+        <img
+          src="./img/sketch-3-todo-list-app-icon-template-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="getDate">Happy Saturday</div>
+      <div class="addItemInput">
+        <input type="text" name="" id="addTodo" placeholder="✍️Add Item" />
+        <i class="fa-solid fa-plus"></i>
+      </div>
+
+      <section class="todoList">
+        <ul class="listContainer"></ul>
+      </section>
+    </main>
+  </body>
+
+  <script src="./script.js"></script>
+</html>
