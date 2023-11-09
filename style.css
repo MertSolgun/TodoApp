@@ -42,6 +42,7 @@ main div img {
   position: absolute;
   right: 10px;
   color: rgb(205, 16, 16);
+  cursor: pointer;
 }
 
 .todoList li {
